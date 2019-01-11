@@ -66,7 +66,8 @@ def all_supplies_in_holidays(holiday_hash)
         word.capitalize!
       end
       format_holiday = holiday_arr.join(" ")
-      puts format_holiday + ": "
+      items.each do ||
+      puts format_holiday + ": " + 
       
     end
   end
