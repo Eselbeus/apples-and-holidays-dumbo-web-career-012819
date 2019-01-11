@@ -59,26 +59,18 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, hash|
     format_season = season.to_s
     puts format_season[0].upcase + format_season[1..-1] + ":"
-    # binding.pry
     hash.each do |holiday, items|
-      # binding.pry
       holiday_arr = holiday.to_s.split("_").map do |word|
         word.capitalize!
       end
       format_holiday = holiday_arr.join(" ")
-      # format_items = items.map do |item|
-      #   capitalized_item = item.split(" ").map do |w|
-      #     binding.pry
-      #     w.capitalize!
-      #   end
-      # end
       
       puts "  " + format_holiday + ": " + items.join(", ")
       
     end
   end
 end
-all_supplies_in_holidays({
+add_new_holiday({
     :winter => {
       :christmas => ["Lights", "Wreath"],
       :new_years => ["Party Hats"]
