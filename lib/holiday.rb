@@ -59,7 +59,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, hash|
     format_season = season.to_s
     puts format_season[0].upcase + format_season[1..-1] + ":"
-    binding.pry
+    # binding.pry
     hash.each do |holiday, items|
       
       holiday_arr = holiday.split("_").map do |word|
