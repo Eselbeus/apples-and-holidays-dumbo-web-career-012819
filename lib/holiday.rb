@@ -40,6 +40,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   # code here
   # remember to return the updated hash
   holiday_hash[:season][:holiday_name] = supply_array
+  binding.pry
   return holiday_hash
 end
 
@@ -70,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
     end
   end
 end
-add_new_holiday({
+add_new_holiday_with_supplies({
     :winter => {
       :christmas => ["Lights", "Wreath"],
       :new_years => ["Party Hats"]
