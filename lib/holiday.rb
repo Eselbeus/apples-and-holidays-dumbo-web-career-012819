@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
     # binding.pry
     hash.each do |holiday, items|
       binding.pry
-      holiday_arr = holiday.split("_").map do |word|
+      holiday_arr = holiday.to_s.split("_").map do |word|
         word.capitalize!
       end
       format_holiday = holiday_arr.join(" ")
