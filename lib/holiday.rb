@@ -71,7 +71,7 @@ def all_supplies_in_holidays(holiday_hash)
           w.capitalize!
         end
       end
-      format
+      
       puts format_holiday + ": " + format_items.join(", ")
       
     end
