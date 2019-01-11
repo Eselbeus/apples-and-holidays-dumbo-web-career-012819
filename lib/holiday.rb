@@ -62,10 +62,10 @@ def all_supplies_in_holidays(holiday_hash)
     season.each do |holiday, items|
       holiday_arr = holiday.split("_").map do |word|
         word.capitalize!
-        binding.pry
-        format_holiday = holiday_arr.join(" ")
-        puts format_holiday + ": "
       end
+      format_holiday = holiday_arr.join(" ")
+      puts format_holiday + ": "
+      
     end
   end
 end
