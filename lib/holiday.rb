@@ -85,7 +85,7 @@ add_new_holiday_with_supplies({
     :spring => {
       :memorial_day => ["BBQ"]
     }
-  })
+  }, :winter, :columbus, ["bob", "bill"])
 
 def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
